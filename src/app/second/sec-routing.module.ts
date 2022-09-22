@@ -6,7 +6,7 @@ const routes: Routes = [
   {
     path: '',
     children: [
-       { path: 'agregar', component: SegundoComponentComponent },
+       { path: '', component: SegundoComponentComponent },
       { path: '**', redirectTo: 'agregar' },
     ]  }
 ];

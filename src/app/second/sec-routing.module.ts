@@ -1,12 +1,13 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { SegundoComponentComponent } from './segundo-component.component';
 
 const routes: Routes = [
   {
     path: '',
     children: [
-      /* { path: 'agregar', component: AgregarComponent }, */
-      { path: '**', redirectTo: 'listado' },
+       { path: 'agregar', component: SegundoComponentComponent },
+      { path: '**', redirectTo: 'agregar' },
     ]  }
 ];
 
@@ -14,4 +15,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule]
 })
-export class PrinRoutingModule { }
+export class SecRoutingModule { }

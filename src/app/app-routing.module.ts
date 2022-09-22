@@ -3,12 +3,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'auth',
-    loadChildren: () => import('../app/principal/prin/prin.module').then(m => m.PrinModule)
+    path: 'primero',
+    loadChildren: () => import('./principal/prin.module').then(m => m.PrinModule)
   },
   {
-    path: 'other',
-    loadChildren: () => import('../app/second/sec/sec.module').then(m => m.SecModule)
+    path: 'segundo',
+    loadChildren: () => import('./second/sec.module').then(m => m.SecModule)
   },
 ];
 

@@ -10,7 +10,7 @@ import { SecondComponent } from './components/second/second.component';
   declarations: [
     AppComponent,
     PrincipalComponent,
-    SecondComponent
+    SecondComponent,
   ],
   imports: [
     BrowserModule,
